@@ -4,23 +4,20 @@ module.exports = {
     es2021: true
   },
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: [
-    '@typescript-eslint',
-    'prettier'
-  ],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
-    "no-console": 1,       // Means warning
-    "prettier/prettier": 2, // Means error
-    "indent": ["error", 4],
+    'no-console': 1, // Means warning
+    'prettier/prettier': 2, // Means error
+    indent: ['error', 2]
   }
-}
+};
